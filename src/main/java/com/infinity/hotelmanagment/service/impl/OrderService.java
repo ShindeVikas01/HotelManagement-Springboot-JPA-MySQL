@@ -1,5 +1,7 @@
 package com.infinity.hotelmanagment.service.impl;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -30,5 +32,11 @@ public class OrderService implements IOrderInterface{
 		return orderrepo.getOrderEntityByOid(oid);
 		
 	}
+	@Override
+	public List<OrderEntity> getallorder() {
+		// TODO Auto-generated method stub
+		return orderrepo.findAll();
+	}
+	
 	
 }
