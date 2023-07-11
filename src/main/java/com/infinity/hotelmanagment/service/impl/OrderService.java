@@ -24,5 +24,11 @@ public class OrderService implements IOrderInterface{
 		orderrepo.save(orderEntity);
 		return "Data added successfully";
 	}
+	@Override
+	public OrderEntity getorder(int oid) {
 
+		return orderrepo.getOrderEntityByOid(oid);
+		
+	}
+	
 }

@@ -6,4 +6,5 @@ import com.infinity.hotelmanagment.entity.OrderEntity;
 
 public interface OrderRepo extends JpaRepository<OrderEntity, Integer> {
 
+	public OrderEntity getOrderEntityByOid(int oid);
 }
