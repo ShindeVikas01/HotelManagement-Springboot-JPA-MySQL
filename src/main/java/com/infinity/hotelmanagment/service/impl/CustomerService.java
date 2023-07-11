@@ -1,5 +1,7 @@
 package com.infinity.hotelmanagment.service.impl;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -22,6 +24,11 @@ public class CustomerService implements ICusotmerInterface {
 		customerentity.setEid(customerModel.getEid());
 		customerrepo.save(customerentity);
 		return "Data added successfully....";
+	}
+	@Override
+	public List<CustomerEntity> getallcustomer() {
+		// TODO Auto-generated method stub
+		return customerrepo.findAll();
 	}
 
 }
