@@ -9,10 +9,10 @@ import javax.persistence.Table;
 public class OrderEntity {
 
 	@Id
-	int oid;
-	int cid;
-	String odate;
-	int oamount;
+	private int oid;
+	private int cid;
+	private String odate;
+	private int oamount;
 	public int getOid() {
 		return oid;
 	}
@@ -37,6 +37,7 @@ public class OrderEntity {
 	public void setOamount(int oamount) {
 		this.oamount = oamount;
 	}
+	
 	
 	
 }

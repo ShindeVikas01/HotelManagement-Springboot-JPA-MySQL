@@ -1,10 +1,10 @@
 package com.infinity.hotelmanagment.model;
 
 public class OrderModel {
-	int oid;
-	int cid;
-	String odate;
-	int oamount;
+	private int oid;
+	private int cid;
+	private String odate;
+	private int oamount;
 	public int getOid() {
 		return oid;
 	}
@@ -29,7 +29,4 @@ public class OrderModel {
 	public void setOamount(int oamount) {
 		this.oamount = oamount;
 	}
-	
-	
-	
 }

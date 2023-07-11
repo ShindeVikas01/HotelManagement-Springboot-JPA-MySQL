@@ -1,4 +1,4 @@
-package com.infinity.hotelmanagment.control;
+package com.infinity.hotelmanagment.controler;
 
 import java.util.List;
 
